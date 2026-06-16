@@ -54,11 +54,11 @@ The following visualizations were created to understand the dataset:
 
 ### Fuel Type Distribution
 
-![Fuel Type Distribution](fuel_type_hd.png)
+![Fuel Type Distribution](Fuel_Type_hd.png)
 
 ### Transmission Distribution
 
-![Transmission Distribution](transmission_hd.png)
+![Transmission Distribution](Transmission_hd.png)
 
 ### Correlation Heatmap
 
