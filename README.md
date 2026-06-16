@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-green)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-orange)
+![CodeAlpha](https://img.shields.io/badge/CodeAlpha-Internship-red)
 # 🚗 Car Price Prediction Using Machine Learning
 
 This project was developed as part of the **CodeAlpha Data Science Internship**. The goal of this project is to predict the selling price of used cars using Machine Learning techniques based on various car-related features.
