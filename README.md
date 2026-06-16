@@ -1,34 +1,24 @@
 # 🚗 Car Price Prediction Using Machine Learning
 
-This project was completed as part of the **CodeAlpha Data Science Internship**.
-
-The objective of this project is to build a Machine Learning model that can accurately predict the selling price of a used car based on various features such as present price, fuel type, transmission type, driven kilometers, ownership history, and car age.
+This project was developed as part of the **CodeAlpha Data Science Internship**. The goal of this project is to predict the selling price of used cars using Machine Learning techniques based on various car-related features.
 
 ---
 
 ## 📌 Project Objective
 
-To develop a predictive model that estimates the selling price of a car using historical vehicle data and Machine Learning techniques.
+To build a Machine Learning model that can accurately predict the selling price of a car using features such as:
 
----
-
-## 📊 Dataset Information
-
-The dataset contains information about 301 cars and includes the following features:
-
-- Car Name
-- Year
 - Present Price
 - Driven Kilometers
 - Fuel Type
-- Selling Type
 - Transmission
-- Owner
-- Selling Price (Target Variable)
+- Selling Type
+- Owner History
+- Car Age
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
@@ -40,22 +30,39 @@ The dataset contains information about 301 cars and includes the following featu
 
 ---
 
-## 📈 Exploratory Data Analysis (EDA)
+## 📊 Dataset Information
 
-The following analyses and visualizations were performed:
+The dataset contains **301 car records** with the following attributes:
+
+| Feature | Description |
+|----------|------------|
+| Car_Name | Name of the car |
+| Year | Manufacturing year |
+| Selling_Price | Selling price of the car (Target Variable) |
+| Present_Price | Current showroom price |
+| Driven_kms | Total kilometers driven |
+| Fuel_Type | Petrol, Diesel, or CNG |
+| Selling_type | Dealer or Individual |
+| Transmission | Manual or Automatic |
+| Owner | Number of previous owners |
+
+---
+
+## 📈 Exploratory Data Analysis
+
+The following visualizations were created to understand the dataset:
 
 ### Fuel Type Distribution
-- Petrol vehicles dominate the dataset.
-- Diesel vehicles are the second most common.
-- Only a few CNG vehicles are present.
 
-### Transmission Analysis
-- Most cars use Manual transmission.
-- Automatic transmission vehicles are comparatively fewer.
+![Fuel Type Distribution](fuel_type_hd.png)
+
+### Transmission Distribution
+
+![Transmission Distribution](transmission_hd.png)
 
 ### Correlation Heatmap
-- Analyzed relationships between different features.
-- Identified important variables affecting car prices.
+
+![Correlation Heatmap](correlation_heatmap_hd.png)
 
 ---
 
@@ -63,11 +70,11 @@ The following analyses and visualizations were performed:
 
 The following preprocessing steps were performed:
 
-1. Checked for missing values.
-2. Removed unnecessary columns.
-3. Created a new feature called **Car Age**.
-4. Converted categorical data into numerical format using One-Hot Encoding.
-5. Separated features and target variables.
+- Checked for missing values
+- Created a new feature: **Car Age**
+- Removed unnecessary columns
+- Converted categorical variables into numerical values using One-Hot Encoding
+- Split the dataset into training and testing sets
 
 ---
 
@@ -75,10 +82,10 @@ The following preprocessing steps were performed:
 
 ### Random Forest Regressor
 
-The dataset was split into:
+The dataset was divided into:
 
-- 80% Training Data
-- 20% Testing Data
+- **80% Training Data**
+- **20% Testing Data**
 
 A Random Forest Regressor model was trained to predict car selling prices.
 
@@ -92,18 +99,13 @@ A Random Forest Regressor model was trained to predict car selling prices.
 0.9594
 ```
 
-### Performance
+### Actual vs Predicted Price
 
-The model achieved an R² Score of approximately **95.94%**, indicating excellent prediction accuracy on unseen data.
+![Actual vs Predicted Price](actual_vs_predicted_hd.png)
 
----
+### Result
 
-## 📷 Visualizations
-
-- Fuel Type Distribution
-- Transmission Distribution
-- Correlation Heatmap
-- Actual vs Predicted Price Graph
+The model achieved an **R² Score of 95.94%**, indicating excellent prediction performance and strong correlation between actual and predicted car prices.
 
 ---
 
@@ -127,19 +129,19 @@ CodeAlpha_CarPricePrediction
 
 Through this project, I learned:
 
-- Data Cleaning and Preprocessing
-- Feature Engineering
-- Exploratory Data Analysis
+- Data Cleaning
 - Data Visualization
-- Regression Models
+- Feature Engineering
+- Machine Learning Regression
 - Random Forest Algorithm
 - Model Evaluation using R² Score
+- End-to-End Machine Learning Workflow
 
 ---
 
 ## 🚀 Conclusion
 
-This project demonstrates how Machine Learning can be used to predict used car prices based on multiple vehicle-related features. The Random Forest Regressor performed exceptionally well and achieved an R² Score of **95.94%**, making it a reliable model for price prediction tasks.
+This project demonstrates how Machine Learning can be used to predict used car prices based on multiple vehicle characteristics. The Random Forest Regressor model performed exceptionally well and achieved an R² Score of **95.94%**, making it a reliable solution for car price prediction.
 
 ---
 
